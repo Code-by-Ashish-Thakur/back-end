@@ -42,6 +42,6 @@ Connection(USERNAME,PASSWORD);
  paytmParams['ORDER_ID']=uuid();
 paytmParams ['CUST_ID']=process.env.PAYTM_CUST_ID;
 paytmParams['TXN_AMOUNT']='10';
-paytmParams['CALLBACK_URL']='http://localhost:8000/callback';
+paytmParams['CALLBACK_URL']='https://back-end-seven-tawny.vercel.app/callback';
 paytmParams['EMAIL']='at03052002@gmail.com';
 paytmParams['MOBILE_NO']='1234567890';
