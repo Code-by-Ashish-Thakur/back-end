@@ -20,11 +20,11 @@ app.use(bodyParser.json({ extended : true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use('/' , Router);
-
 const PORT=8000;
 
 const USERNAME =process.env.DB_USERNAME;
 const PASSWORD=process.env.DB_PASSWORD;
+app.get("/",(req,res)=>{res.send("<h1>Hurray ! Server is running</h1>")});
 
 Connection(USERNAME,PASSWORD);
  app.listen(PORT,() => console.log(`Server is running successfully on PORT ${PORT}`));
